@@ -1,0 +1,47 @@
+<!-- 
+Name: Angel Solares
+File: multiplicationTable.html
+Date: 12/4/23
+GUI Assignment: Creates a multiplication table generator.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="multiplicationForm">
+    <header>Multiplication Table Generator</header>
+    <br>
+    <label for="startMultiplier">Start Multiplier:</label>
+    <input type="number" id="startMultiplier" name="startMultiplier" required>
+
+    <label for="endMultiplier">End Multiplier:</label>
+    <input type="number" id="endMultiplier" name="endMultiplier" required>
+    <br>
+    <label for="startMultiplicand">Start Multiplicand:</label>
+    <input type="number" id="startMultiplicand" name="startMultiplicand" required>
+
+    <label for="endMultiplicand">End Multiplicand:</label>
+    <input type="number" id="endMultiplicand" name="endMultiplicand" required>
+    <br>
+    <button type="submit">Generate Table</button> <!-- Change type to submit -->
+</form>
+
+<div id="tableContainer" class="scrollable-table">
+    <table id="multiplicationTable">
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+<script src="tablescript.js"></script>
+</body>
+</html>
